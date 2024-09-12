@@ -34,12 +34,12 @@
 
 <body class=".font-manrope">
     <header class="md:container mx-auto my-10 lg:px-8">
-        <div class="flex items-center justify-around gap-4">
+        <div class="flex flex-col md:flex-row items-center justify-around gap-4">
             <div class="navbar-start">
                 <a class="font-extrabold text-4xl text-[#131318]">Hockey-HStrike</a>
             </div>
             <div class="navbar-center">
-                <ul class="flex gap-8">
+                <ul class="flex flex-col md:flex-row gap-8">
                     <li><a href=""><span class="text-b-prm font-bold">Home</span></a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Pages</a></li>
@@ -138,7 +138,7 @@
                     turpis placerat <br> dolor. Purus urna in
                     sit nullam proin.</p>
             </div>
-            <div class="grid grid-cols-2 gap-6 my-10 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-2 md:gap-6 my-10 px-4 lg:px-8">
                 <div class="card image-full rounded-xl shadow-lg">
                     <figure>
                         <img class="w-full" src="images/2.png" alt="" />
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card image-full rounded-lg col-span-2 shadow-lg">
+                <div class="card image-full rounded-lg md:col-span-2 shadow-lg">
                     <figure>
                         <img class="w-full" src="images/4.png" alt="" />
                     </figure>
@@ -466,6 +466,63 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-24">
+            <div class="text-center space-y-4">
+                <h3 class="text-4xl font-bold text-[#131318]">Get In Touch</h3>
+                <p class="font-normal text-neutal-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat <br> dolor. Purus urna in
+                    sit nullam proin.</p>
+            </div>
+            <div class="flex my-10 gap-6 items-center justify-around">
+                <div class="border-2 drop-shadow-lg rounded-xl p-6">
+                    <div class="w-80 h-44 bg-[#BCED6D] mb-5 p-6">
+                        <i class="fa-solid fa-phone-volume fa-2xl pt-2" style="color: #63E6BE;"></i>
+                        <div class="pt-8">
+                            <p>Phone Number</p>
+                            <p class="text-lg text-#131318 font-extrabold">(+62) 123-321-543</p>
+                        </div>
+                    </div>
+                    <div class="w-80 h-44 bg-[#FDDD5F] mb-5 p-6">
+                        <i class="fa-solid fa-envelope-circle-check fa-2xl pt-2" style="color: #FFD43B;"></i>
+                        <div class="pt-8">
+                            <p>Email</p>
+                            <p class="text-lg text-#131318 font-extrabold">hockeys@support.com</p>
+                        </div>
+                    </div>
+                    <div class="w-80 h-44 bg-gradient-to-r from-cyan-300 to-blue-200 p-6">
+                        <i class="fa-solid fa-location-dot fa-2xl pt-2" style="color: #74C0FC;"></i>
+                        <div class="pt-8">
+                            <p>Location</p>
+                            <p class="text-lg text-#131318 font-extrabold">152/1 Mohakhali Wireless Gate</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form>
+                        <div class="flex">
+                            <label class="input" for="urname">Your Name</label>
+                            <input type="text" id="urname" name="urname" placeholder="Enter your full name"><br>
+                            <label class="input" for="uremail">Your Email</label>
+                            <input type="text" id="uremail" name="uremail" placeholder="Enter your email"><br>
+                        </div>
+                        <div class="flex">
+                            <label class="input" for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter your subject"><br>
+                            <label class="input" for="uremail">Phone Number</label>
+                            <input type="text" id="uremail" name="uremail" placeholder="Enter your phone number"><br>
+                        </div>
+                        <label class="form-control mb-3">
+                            <div class="Message">
+                                <span class="label-text">Message</span>
+                            </div>
+                            <textarea class="textarea textarea-bordered w-[672px] h-64"
+                                placeholder="Write your message"></textarea>
+                        </label>
+                        <button class="btn bg-b-prm w-[672px]">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
