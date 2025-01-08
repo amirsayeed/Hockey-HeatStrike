@@ -476,7 +476,7 @@
                     turpis placerat <br> dolor. Purus urna in
                     sit nullam proin.</p>
             </div>
-            <div class="flex my-10 gap-6 items-center justify-around">
+            <div class="flex my-10 gap-4 items-center justify-around flex-col lg:flex-row">
                 <div class="border-2 drop-shadow-lg rounded-xl p-6">
                     <div class="w-80 h-44 bg-[#BCED6D] mb-5 p-6">
                         <i class="fa-solid fa-phone-volume fa-2xl pt-2" style="color: #63E6BE;"></i>
@@ -501,27 +501,40 @@
                     </div>
                 </div>
                 <div>
-                    <form>
-                        <div class="flex">
-                            <label class="input" for="urname">Your Name</label>
-                            <input type="text" id="urname" name="urname" placeholder="Enter your full name"><br>
-                            <label class="input" for="uremail">Your Email</label>
-                            <input type="text" id="uremail" name="uremail" placeholder="Enter your email"><br>
-                        </div>
-                        <div class="flex">
-                            <label class="input" for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Enter your subject"><br>
-                            <label class="input" for="uremail">Phone Number</label>
-                            <input type="text" id="uremail" name="uremail" placeholder="Enter your phone number"><br>
-                        </div>
-                        <label class="form-control mb-3">
-                            <div class="Message">
-                                <span class="label-text">Message</span>
+                    <form class="space-y-1">
+                        <div class="flex justify-between flex-col md:flex-row">
+                            <div class="flex flex-col">
+                                <label class="input" for="urname"><b>Your Name</b></label>
+                                <input type="text" id="urname" name="urname" class="w-48 p-2 ml-2"
+                                    placeholder="Enter your full name">
                             </div>
-                            <textarea class="textarea textarea-bordered w-[672px] h-64"
+
+                            <div class="flex flex-col">
+                                <label class="input" for="uremail"><b>Your Email</b></label>
+                                <input type="text" id="uremail" name="uremail" class="w-48 p-2 ml-2"
+                                    placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="flex justify-between flex-col md:flex-row">
+                            <div class="flex flex-col">
+                                <label class="input" for="urname"><b>Subject</b></label>
+                                <input type="text" id="urname" name="urname" class="w-48 p-2 ml-2"
+                                    placeholder="Enter your subject">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="input" for="uremail"><b>Phone Number</b></label>
+                                <input type="text" id="uremail" name="uremail" class="w-48 p-2 ml-2"
+                                    placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        <label class="form-control mb-3 space-y-1">
+                            <div class="Message">
+                                <span class="label-text"><b>Message</b></span>
+                            </div>
+                            <textarea class="textarea textarea-bordered w-[600px] h-56"
                                 placeholder="Write your message"></textarea>
                         </label>
-                        <button class="btn bg-b-prm w-[672px]">Send Message</button>
+                        <button class="btn bg-b-prm w-[600px]">Send Message</button>
                     </form>
                 </div>
             </div>
